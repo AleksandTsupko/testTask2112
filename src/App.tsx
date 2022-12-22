@@ -5,6 +5,7 @@ import List from './components/List';
 import UserItem from './components/UserItem';
 import TodoItem from './components/TodoItem';
 import { IUser, ITodo } from './types/types';
+import EventsExample from './components/EventsExample';
 
 const App = () => {
   const [users, setUsers] = useState<IUser[]>([])
@@ -35,6 +36,7 @@ const App = () => {
 
   return (
     <div>
+      <EventsExample />
       <Card onClick={(num) => console.log(num)} variant={CardVariant.primary} width='200px' height='200px'>
         <button>Click</button>
       </Card>

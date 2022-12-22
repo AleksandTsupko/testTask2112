@@ -5,11 +5,11 @@ interface TodoItemProps {
     todo: ITodo
 }
 
-const TodoItem: FunctionComponent<TodoItemProps> = ({todo}) => {
+const TodoItem: FunctionComponent<TodoItemProps> = ({ todo }) => {
     return (
         <div>
             <input type="checkbox" checked={todo.completed} />
-{todo.id}. {todo.title}
+            {todo.id}. {todo.title}
         </div>
     )
 }
